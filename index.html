@@ -1,0 +1,59 @@
+<!-- <!doctype html> -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Web Assignment 0</title>
+  <meta name="description" content="Client 1">
+  <meta name="author" content="Willow Thompson">
+
+  <link rel="stylesheet" href="page.css">
+  <script src="page.js"></script>
+</head>
+<body>
+    <div class="worms"></div>
+    <div class="body2">
+        <h1>SWEN-344 Worm Counter</h1>
+        <!-- <h2>Section 2</h2> -->
+        <div class="top_flex">
+            <div>
+                <h3>Current Expiriment: Blister Mutation</h3>
+                <h3>Petri Dish 1</h3>
+            </div>
+            <!-- <div>
+                <h3>Petri Dish 1</h3>
+            </div> -->
+        </div>
+        <br>
+        <label for="count_type">Choose an option for counting: </label>
+        <select name="count_type" id="count_type" onclick="updateButtons()">
+            <option value="maturity">Maturity</option>
+            <option value="sex">Sex</option>
+            <option value="coordination">Coodination</option>
+            <option value="mutant">Mutant</option>
+        </select>
+        <br>
+        <div class=buttons_flex>
+            <button id="button1" onclick="button('one')">Adult</button>
+            <button id="button2" onclick="button('two')">Juvinile</button>
+        </div>
+        <div class= "bottom_flex">
+            <div>
+                <h3>Current Counts:</h3>
+                <ul class="list_flex_vertical">
+                    <li>
+                        <h4 id="count_1_label">Adult</h4>
+                        <h4 id="count_1">0</h4>
+                    </li>
+                    <li>
+                        <h4 id="count_2_label">Juvenile</h4>
+                        <h4 id="count_2">0</h4>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Chart:</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
